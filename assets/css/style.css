@@ -64,9 +64,8 @@
     .h1Shifumi {
         grid-column: 5/11;
         grid-row: 2/3;
-        margin-left: -44vh;
-
-
+        position: fixed;
+        left: 0;
     }
 
     .txtShifumi {
@@ -226,8 +225,6 @@
     #gameTable{
         grid-column: 7/10;
         grid-row: 6/9;
-        width: 400;
-        height: 400;
         text-align: center;
         font-family: 'Montserrat-SemiBold';
         font-size: 80px;
@@ -396,7 +393,7 @@
         border-radius: 1.5rem;
         border-color: #FFD43D;
         background-color: white;
-        font-size: 3.5rem;
+        font-size: 3rem;
         border-width: 0.3rem;
         width: 20vw;
         height: 10vh;
@@ -409,7 +406,7 @@
         border-radius: 1.5rem;
         border-color: #E8644D;
         background-color: white;
-        font-size: 3.5rem;
+        font-size: 3rem;
         border-width: 0.3rem;
         width: 20vw;
         height: 10vh;
@@ -424,7 +421,7 @@
         border-radius: 1.5rem;
         border-color: #FFD43D;
         background-color: white;
-        font-size: 3.5rem;
+        font-size: 3rem;
         border-width: 0.3rem;
         width: 20vw;
         height: 10vh;
@@ -437,7 +434,7 @@
         border-radius: 1.5rem;
         border-color: #E8644D;
         background-color: white;
-        font-size: 3.5rem;
+        font-size: 3rem;
         border-width: 0.3rem;
         width: 20vw;
         height: 10vh;
@@ -452,7 +449,7 @@
         border-radius: 1.5rem;
         border-color: #FFD43D;
         background-color: white;
-        font-size: 3.5rem;
+        font-size: 3rem;
         border-width: 0.3rem;
         width: 20vw;
         height: 10vh;
@@ -465,7 +462,7 @@
         border-radius: 1.5rem;
         border-color: #E8644D;
         background-color: white;
-        font-size: 3.5rem;
+        font-size: 3rem;
         border-width: 0.3rem;
         width: 20vw;
         height: 10vh;
@@ -505,8 +502,8 @@
     }
 
     #returnID{
-        margin-top: 10vh;
-        margin-left: -5vh;
+        margin-top: 14vh;
+        margin-left: -12vh;
         font-size: 3rem;
         font-family: 'BADABB__.TTF';
         color: #313131;
@@ -551,7 +548,7 @@
     
     #replay {
         position: absolute;
-        right: 11.7vh;
+        right: 13vh;
         bottom: 26vh;
         font-family: 'Montserrat-SemiBold';
         color: #313131;
@@ -568,7 +565,7 @@
 
     #replay2 {
         position: absolute;
-        right: 11.7vh;
+        right: 13vh;
         bottom: 26vh;
         font-family: 'Montserrat-SemiBold';
         color: #313131;

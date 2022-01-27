@@ -83,5 +83,9 @@ function game() {
     }
 }
 
-
-
+window.addEventListener('load', () => {
+    var stock = localStorage.getItem('firstName');
+    playerName.innerHTML = stock;
+    // localStorage.clear();
+    console.log(stock);
+})
