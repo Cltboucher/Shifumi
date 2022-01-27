@@ -53,6 +53,42 @@ reload2.addEventListener('click', function () {
 function game() {
     ai = Math.floor(Math.random() * (max - min + 1)) + min;
 
+    switch (ai) {
+        case 1:
+            rockAi.style.background = '#313131';
+            paperAi.style.background = 'white';
+            scisorsAi.style.background = 'white';
+            break;
+        case 2:
+            paperAi.style.background = '#313131';
+            scisorsAi.style.background = 'white';
+            rockAi.style.background = 'white';
+            break;
+        case 3:
+            scisorsAi.style.background = '#313131';
+            rockAi.style.background = 'white';
+            paperAi.style.background = 'white';
+            break;
+    }
+
+    switch (dragID) {
+        case 'rock':
+            rock.style.background = '#313131';
+            paper.style.background = 'white';
+            scisors.style.background = 'white';
+            break;
+        case 'paper':
+            paper.style.background = '#313131';
+            scisors.style.background = 'white';
+            rock.style.background = 'white';
+            break;
+        case 'scisors':
+            scisors.style.background = '#313131';
+            rock.style.background = 'white';
+            paper.style.background = 'white';
+            break;
+    }
+
     console.log(dragID, ai);
     if ((dragID == 'rock' && ai == 2) || (dragID == 'paper' && ai == 3) || (dragID == 'scisors' && ai == 1)) {
         returnID.innerHTML = 'PERDU!';
@@ -89,3 +125,4 @@ window.addEventListener('load', () => {
     // localStorage.clear();
     console.log(stock);
 })
+
