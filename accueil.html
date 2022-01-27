@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Shifumi</title>
+</head>
+
+<body>
+
+    <div class="grid">
+        <img class="logoShifumi" src="assets/png/logoResponsive.png" alt="logo">
+        <img class="h1Shifumi" src="assets/png/title.png" alt="logo" width="250">
+
+        <div class="txtShifumi">
+            <p></p>
+        </div>
+
+        <div class="score">
+            <p></p>
+        </div>
+
+        <div class="scoreRouge">
+            <p>Computer</p>
+            <p id="comp">0</p>
+        </div>
+
+        <div class="scoreJaune">
+            <p id="playerName"></p>
+            <p id="player">0</p>
+        </div>
+
+        <button class="btnPierreJaune dragging" id="rock" draggable="true" type="button">👊</button>
+
+        <button class="btnFeuilleJaune dragging" id="paper" draggable="true" type="button">🖐</button>
+
+        <button class="btnCiseauxJaune dragging" id="scisors" draggable="true" type="button">✌️</button>
+
+        <button class="btnPierreRouge" type="button">👊</button>
+
+        <button class="btnFeuilleRouge" type="button">🖐</button>
+
+        <button class="btnCiseauxRouge" type="button">✌️</button>
+
+        <div class="tauxVictoire">
+            <p>Taux de victoire</p>
+            <p id="ratio">0%</p>
+        </div>
+
+        <img class="tableDeJeux" src="assets/png/table.png" alt="table de jeux">
+
+        <div id="gameTable">
+            <p id="returnID"></p>
+
+        </div>
+    </div>
+
+    <main id="modalWin">
+        <div id="toto">
+            <div class="win">
+                <video class="d-md-none d-block" autoplay loop>
+                    <source
+                        src="https://media.istockphoto.com/videos/pop-art-background-with-polka-dots-and-speed-lines-video-id1216172859"
+                        type="video/mp4">
+                </video>
+                <div class="h11">
+                    <p>Gagné</p>
+                </div>
+                <div>
+                    <button id="replay">Rejouer !</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main id="modalLose">
+        <div id="toto">
+            <div class="win">
+                <video autoplay loop>
+                    <source
+                        src="https://media.istockphoto.com/videos/psychedelic-geometric-patterns-of-the-circleloop-video-id1152568614"
+                        type="video/mp4">
+                </video>
+                <div class="h11">
+                    <p>Perdu</p>
+                </div>
+                <div>
+                    <button id="replay2">Rejouer !</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+        <script src="assets/Js/script.js"></script>
+   
+</body>
+
+</html>
